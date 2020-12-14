@@ -10,6 +10,8 @@ import { ProgressbarComponent } from './components/progressbar/progressbar.compo
 import { StarratingsComponent } from './components/starratings/starratings.component';
 import { FormsModule } from '@angular/forms';
 import { TopOfPageComponent } from './components/top-of-page/top-of-page.component';
+import { RouterModule } from '@angular/router';
+import { ComponentsDocumentationComponent } from './components/components-documentation/components-documentation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,8 +21,13 @@ import { TopOfPageComponent } from './components/top-of-page/top-of-page.compone
     ProgressbarComponent,
     StarratingsComponent,
     TopOfPageComponent,
+    ComponentsDocumentationComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
