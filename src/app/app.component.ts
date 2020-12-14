@@ -15,4 +15,5 @@ export class AppComponent {
   ];
 
   public progressValue = 25;
+  public rating = 0;
 }

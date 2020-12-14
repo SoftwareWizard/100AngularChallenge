@@ -10,6 +10,17 @@
 
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Star Ratings'"
+  [subTitle]="'Components'"
+>
+  <app-starratings body [rating]="rating"></app-starratings>
+  <div footer>
+    <input type="text" footer [(ngModel)]="rating" />
+  </div>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Progress Bar'"
   [subTitle]="'Components'"
 >
