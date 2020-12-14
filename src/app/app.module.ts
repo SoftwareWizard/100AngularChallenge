@@ -9,6 +9,7 @@ import { AccordionComponent } from './components/accordion/accordion.component';
 import { ProgressbarComponent } from './components/progressbar/progressbar.component';
 import { StarratingsComponent } from './components/starratings/starratings.component';
 import { FormsModule } from '@angular/forms';
+import { TopOfPageComponent } from './components/top-of-page/top-of-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
     AccordionComponent,
     ProgressbarComponent,
     StarratingsComponent,
+    TopOfPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
