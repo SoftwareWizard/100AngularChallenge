@@ -10,6 +10,15 @@
 
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Progress Bar'"
+  [subTitle]="'Components'"
+>
+  <app-progressbar body [value]="progressValue"></app-progressbar>
+  <button footer (click)="progressValue = 75">Update</button>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Accordion'"
   [subTitle]="'Components'"
 >

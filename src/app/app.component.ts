@@ -13,4 +13,6 @@ export class AppComponent {
     { title: 'Example 1', content: 'Example content 1', isExpanded: false },
     { title: 'Example 2', content: 'Example content 2', isExpanded: false },
   ];
+
+  public progressValue = 25;
 }
