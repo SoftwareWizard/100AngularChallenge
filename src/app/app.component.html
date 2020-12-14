@@ -10,10 +10,17 @@
 
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Accordion'"
+  [subTitle]="'Components'"
+>
+  <app-accordion body [items]="accordionItems"></app-accordion>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Card'"
   [subTitle]="'Components'"
 >
-
   <p footer>Footer</p>
   <p body>Body</p>
 </app-card>
