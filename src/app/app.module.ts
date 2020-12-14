@@ -12,6 +12,9 @@ import { FormsModule } from '@angular/forms';
 import { TopOfPageComponent } from './components/top-of-page/top-of-page.component';
 import { RouterModule } from '@angular/router';
 import { ComponentsDocumentationComponent } from './components/components-documentation/components-documentation.component';
+import { PipeDocumentationComponent } from './components/pipe-documentation/pipe-documentation.component';
+import { DirectivesDocumentationComponent } from './components/directives-documentation/directives-documentation.component';
+import { ServicesDocumentationComponent } from './components/services-documentation/services-documentation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +25,9 @@ import { ComponentsDocumentationComponent } from './components/components-docume
     StarratingsComponent,
     TopOfPageComponent,
     ComponentsDocumentationComponent,
+    PipeDocumentationComponent,
+    DirectivesDocumentationComponent,
+    ServicesDocumentationComponent,
   ],
   imports: [
     BrowserModule,
