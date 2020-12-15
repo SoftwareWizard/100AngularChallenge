@@ -1,5 +1,17 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Credit Card Formatter'"
+  [subTitle]="'Pipes'"
+>
+  <div body>
+    <p>{{'1111222233334444' | creditCardFormatter}}</p>
+    <p>{{'111111111111111111111111111' | creditCardFormatter}}</p>
+    <p>{{'a111222333444' | creditCardFormatter}}</p>
+  </div>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Truncate'"
   [subTitle]="'Pipes'"
 >
@@ -13,7 +25,7 @@
       Sed venenatis nibh sit amet nisi eleifend molestie. Phasellus dignissim, nibh quis fermentum euismod,
       elit eros gravida nunc, ac volutpat dui enim vitae sem. Pellentesque maximus rutrum diam at feugiat.
       Quisque sit amet lectus ut eros hendrerit varius id in neque. Aliquam.'
-        | appTruncate : 75
+        | appTruncate: 75
     }}
   </p>
 </app-card>
