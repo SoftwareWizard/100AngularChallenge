@@ -13,6 +13,7 @@ import { ComponentsDocumentationComponent } from './components/components-docume
 import { DirectivesDocumentationComponent } from './components/directives-documentation/directives-documentation.component';
 import { ServicesDocumentationComponent } from './components/services-documentation/services-documentation.component';
 import { SharedModule } from './modules/shared/shared.module';
+import { LoaderComponent } from './components/loader/loader.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { SharedModule } from './modules/shared/shared.module';
     ComponentsDocumentationComponent,
     DirectivesDocumentationComponent,
     ServicesDocumentationComponent,
+    LoaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, SharedModule],
   providers: [],

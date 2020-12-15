@@ -16,4 +16,5 @@ export class ComponentsDocumentationComponent {
 
   public progressValue = 25;
   public rating = 0;
+  public isLoading = false;
 }

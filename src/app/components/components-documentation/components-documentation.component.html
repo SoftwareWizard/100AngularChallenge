@@ -1,5 +1,15 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Loader'"
+  [subTitle]="'Components'"
+>
+  <app-loader body [isLoading]="isLoading"></app-loader>
+  <button footer (click)="isLoading = true;">Load</button>
+
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Star Ratings'"
   [subTitle]="'Components'"
 >
