@@ -1,11 +1,28 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Credit Card'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <app-credit-card
+      [creditCardNumber]="'3321432143214321'"
+      [isReadOnly]="false"
+    ></app-credit-card>
+    <br />
+    <app-credit-card
+      [creditCardNumber]="'1111222233334444'"
+      [isReadOnly]="true"
+    ></app-credit-card>
+  </div>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Loader'"
   [subTitle]="'Components'"
 >
   <app-loader body [isLoading]="isLoading"></app-loader>
-  <button footer (click)="isLoading = true;">Load</button>
-
+  <button footer (click)="isLoading = true">Load</button>
 </app-card>
 
 <app-card
@@ -44,4 +61,3 @@
   <p footer>Footer</p>
   <p body>Body</p>
 </app-card>
-

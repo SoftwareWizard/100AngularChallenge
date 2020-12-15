@@ -14,6 +14,7 @@ import { DirectivesDocumentationComponent } from './components/directives-docume
 import { ServicesDocumentationComponent } from './components/services-documentation/services-documentation.component';
 import { SharedModule } from './modules/shared/shared.module';
 import { LoaderComponent } from './components/loader/loader.component';
+import { CreditCardComponent } from './components/credit-card/credit-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { LoaderComponent } from './components/loader/loader.component';
     DirectivesDocumentationComponent,
     ServicesDocumentationComponent,
     LoaderComponent,
+    CreditCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, SharedModule],
   providers: [],
