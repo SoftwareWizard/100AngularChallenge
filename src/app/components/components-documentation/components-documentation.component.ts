@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AccordionItem } from '../accordion/AccordionItem';
+import { LoaderType } from '../loader2/loader-type.enum';
 
 @Component({
   selector: 'app-components-documentation',
@@ -17,4 +18,6 @@ export class ComponentsDocumentationComponent {
   public progressValue = 25;
   public rating = 0;
   public isLoading = false;
+  public isLoading2 = false;
+  public LoaderType = LoaderType;
 }

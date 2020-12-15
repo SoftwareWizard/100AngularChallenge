@@ -1,5 +1,14 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Loader V2'"
+  [subTitle]="'Components'"
+>
+  <app-loader2 body [isLoading]="isLoading2" [loaderType]="LoaderType.Loading"></app-loader2>
+  <button footer (click)="isLoading2 = true">Load</button>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Credit Card'"
   [subTitle]="'Components'"
 >
