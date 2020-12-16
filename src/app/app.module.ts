@@ -16,6 +16,7 @@ import { SharedModule } from './modules/shared/shared.module';
 import { LoaderComponent } from './components/loader/loader.component';
 import { CreditCardComponent } from './components/credit-card/credit-card.component';
 import { Loader2Component } from './components/loader2/loader2.component';
+import { ModalComponent } from './components/modal/modal.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +31,7 @@ import { Loader2Component } from './components/loader2/loader2.component';
     LoaderComponent,
     CreditCardComponent,
     Loader2Component,
+    ModalComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, SharedModule],
   providers: [],

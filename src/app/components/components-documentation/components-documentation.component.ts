@@ -19,5 +19,6 @@ export class ComponentsDocumentationComponent {
   public rating = 0;
   public isLoading = false;
   public isLoading2 = false;
+  public isModalHidden = true;
   public LoaderType = LoaderType;
 }

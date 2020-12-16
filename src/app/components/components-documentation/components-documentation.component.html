@@ -1,9 +1,27 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Modal'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <app-modal [title]="'Modal Example'" #modal>
+      <p>Some Content</p>
+      <button (click)="modal.close()">Close</button>
+    </app-modal>
+  </div>
+  <button footer (click)="modal.open()">Open</button>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Loader V2'"
   [subTitle]="'Components'"
 >
-  <app-loader2 body [isLoading]="isLoading2" [loaderType]="LoaderType.Loading"></app-loader2>
+  <app-loader2
+    body
+    [isLoading]="isLoading2"
+    [loaderType]="LoaderType.Loading"
+  ></app-loader2>
   <button footer (click)="isLoading2 = true">Load</button>
 </app-card>
 
