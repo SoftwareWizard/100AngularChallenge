@@ -20,5 +20,6 @@ export class ComponentsDocumentationComponent {
   public isLoading = false;
   public isLoading2 = false;
   public isModalHidden = true;
+  public toggleValue = false;
   public LoaderType = LoaderType;
 }

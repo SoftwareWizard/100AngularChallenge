@@ -1,9 +1,23 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Toggle'"
+  [subTitle]="'Components'"
+>
+  <app-toggle body [(isOn)]="toggleValue"></app-toggle>
+  <p footer>{{ toggleValue }}</p>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Quote'"
   [subTitle]="'Components'"
 >
-  <app-quote body [author]="'Simon Bauer'" [quote]="'ein langer Text'" [occupation]="'Senior Software Engineer'"></app-quote>
+  <app-quote
+    body
+    [author]="'Simon Bauer'"
+    [quote]="'ein langer Text'"
+    [occupation]="'Senior Software Engineer'"
+  ></app-quote>
 </app-card>
 
 <app-card

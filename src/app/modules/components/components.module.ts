@@ -14,6 +14,7 @@ import { StarratingsComponent } from './starratings/starratings.component';
 import { TopOfPageComponent } from './top-of-page/top-of-page.component';
 import { FormsModule } from '@angular/forms';
 import { QuoteComponent } from './quote/quote.component';
+import { ToggleComponent } from './toggle/toggle.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { QuoteComponent } from './quote/quote.component';
     StarratingsComponent,
     TopOfPageComponent,
     QuoteComponent,
+    ToggleComponent,
   ],
   imports: [
     CommonModule,
