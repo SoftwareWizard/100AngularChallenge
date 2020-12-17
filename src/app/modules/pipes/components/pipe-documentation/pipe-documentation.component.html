@@ -1,5 +1,13 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Filter Term'"
+  [subTitle]="'Pipes'"
+>
+  <div body>{{ ['Hello', 'World', 'Hello World'] | appFilterTerm : 'Hello' }}</div>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Flatten'"
   [subTitle]="'Pipes'"
 >
