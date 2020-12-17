@@ -1,5 +1,13 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Quote'"
+  [subTitle]="'Components'"
+>
+  <app-quote body [author]="'Simon Bauer'" [quote]="'ein langer Text'" [occupation]="'Senior Software Engineer'"></app-quote>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Modal'"
   [subTitle]="'Components'"
 >
@@ -52,7 +60,7 @@
   <button footer (click)="isLoading = true">Load</button>
 </app-card>
 
-<app-card
+<!-- <app-card
   [iconClass]="'fas fa-info-circle'"
   [title]="'Star Ratings'"
   [subTitle]="'Components'"
@@ -61,7 +69,7 @@
   <div footer>
     <input type="text" footer [(ngModel)]="rating" />
   </div>
-</app-card>
+</app-card> -->
 
 <app-card
   [iconClass]="'fas fa-info-circle'"

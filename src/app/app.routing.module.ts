@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ComponentsDocumentationComponent } from './components/components-documentation/components-documentation.component';
-import { ServicesDocumentationComponent } from './components/services-documentation/services-documentation.component';
+import { ServicesDocumentationComponent } from './modules/services/components/services-documentation/services-documentation.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-  { path: 'components', component: ComponentsDocumentationComponent },
+  {
+    path: 'components',
+    loadChildren: () =>
+      import('./modules/components/components.module').then(
+        (m) => m.ComponentsModule
+      ),
+  },
   {
     path: 'pipes',
     loadChildren: () =>
@@ -18,8 +24,7 @@ const routes: Routes = [
       ),
   },
   { path: 'services', component: ServicesDocumentationComponent },
-  { path: 'other', component: ComponentsDocumentationComponent },
-  { path: '**', component: ComponentsDocumentationComponent },
+  { path: '**', component: HomeComponent },
 ];
 
 @NgModule({
