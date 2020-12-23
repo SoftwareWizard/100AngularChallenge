@@ -15,6 +15,7 @@ import { TopOfPageComponent } from './top-of-page/top-of-page.component';
 import { FormsModule } from '@angular/forms';
 import { QuoteComponent } from './quote/quote.component';
 import { ToggleComponent } from './toggle/toggle.component';
+import { DebounceSearchComponent } from './debounce-search/debounce-search.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ToggleComponent } from './toggle/toggle.component';
     TopOfPageComponent,
     QuoteComponent,
     ToggleComponent,
+    DebounceSearchComponent,
   ],
   imports: [
     CommonModule,

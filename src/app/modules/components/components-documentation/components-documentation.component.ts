@@ -22,4 +22,8 @@ export class ComponentsDocumentationComponent {
   public isModalHidden = true;
   public toggleValue = false;
   public LoaderType = LoaderType;
+
+  onSearchUpdate($event): void {
+    console.log($event);
+  }
 }

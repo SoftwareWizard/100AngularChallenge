@@ -1,5 +1,16 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Debounce Search'"
+  [subTitle]="'Components'"
+>
+
+<div body>
+  <app-debounce-search [placeholder]="'Enter Search Term'" (searchUpdate)="onSearchUpdate($event)"></app-debounce-search>
+</div>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Toggle'"
   [subTitle]="'Components'"
 >
