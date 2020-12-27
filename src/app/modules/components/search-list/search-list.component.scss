@@ -1,0 +1,22 @@
+@import 'src/styles';
+
+ul {
+  position: relative;
+
+  .item-container {
+    position: absolute;
+    width: 100%;
+
+    li {
+      list-style: none;
+      transition: all 0.3s;
+      cursor: pointer;
+      padding: 3px;
+
+      &:hover {
+        background-color: $blue;
+        color: white;
+      }
+    }
+  }
+}

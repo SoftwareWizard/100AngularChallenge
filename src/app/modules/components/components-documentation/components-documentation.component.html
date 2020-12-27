@@ -1,12 +1,26 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Search List'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <app-search-list
+      [items]="['Unites States', 'Mexico', 'Germany']"
+    ></app-search-list>
+  </div>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Debounce Search'"
   [subTitle]="'Components'"
 >
-
-<div body>
-  <app-debounce-search [placeholder]="'Enter Search Term'" (searchUpdate)="onSearchUpdate($event)"></app-debounce-search>
-</div>
+  <div body>
+    <app-debounce-search
+      [placeholder]="'Enter Search Term'"
+      (searchUpdate)="onSearchUpdate($event)"
+    ></app-debounce-search>
+  </div>
 </app-card>
 
 <app-card

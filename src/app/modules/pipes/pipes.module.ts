@@ -10,11 +10,14 @@ import { FlattenPipe } from './flatten/flatten.pipe';
 import { FilterTermPipe } from './filter-term/filter-term.pipe';
 
 @NgModule({
-  declarations: [PipeDocumentationComponent, TruncatePipe, CreditCardFormatterPipe, FlattenPipe, FilterTermPipe],
-  imports: [
-    CommonModule,
-    PipesRoutingModule,
-    SharedModule
-  ]
+  declarations: [
+    PipeDocumentationComponent,
+    TruncatePipe,
+    CreditCardFormatterPipe,
+    FlattenPipe,
+    FilterTermPipe,
+  ],
+  imports: [CommonModule, PipesRoutingModule, SharedModule],
+  exports: [FilterTermPipe],
 })
-export class PipesModule { }
+export class PipesModule {}
