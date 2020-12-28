@@ -5,9 +5,10 @@ import { DirectivesRoutingModule } from './directives.routing.module';
 import { DirectivesDocumentationComponent } from './components/directives-documentation/directives-documentation.component';
 import { SharedModule } from '../shared/shared.module';
 import { DebounceClickDirective } from './debounce-click/debounce-click.directive';
+import { RippleDirective } from './ripple/ripple.directive';
 
 @NgModule({
-  declarations: [DirectivesDocumentationComponent, DebounceClickDirective],
+  declarations: [DirectivesDocumentationComponent, DebounceClickDirective, RippleDirective],
   imports: [CommonModule, DirectivesRoutingModule, SharedModule],
 })
 export class DirectivesModule {}

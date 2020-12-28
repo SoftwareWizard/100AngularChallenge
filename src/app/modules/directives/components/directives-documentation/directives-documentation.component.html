@@ -1,5 +1,20 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Ripple'"
+  [subTitle]="'Directives'"
+>
+  <div body>
+    <button
+      appRipple="ripple"
+      style="border: 1px solid black; text-align: center; padding: 10px"
+    >
+      Ripple
+    </button>
+  </div>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Debounce'"
   [subTitle]="'Directives'"
 >
