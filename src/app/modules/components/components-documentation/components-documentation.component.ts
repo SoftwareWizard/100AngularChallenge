@@ -15,6 +15,13 @@ export class ComponentsDocumentationComponent {
     { title: 'Example 2', content: 'Example content 2', isExpanded: false },
   ];
 
+  public tabs: { title: string; active: boolean }[] = [
+    { title: 'Tab 1', active: true },
+    { title: 'Tab 2', active: false },
+  ];
+
+  public selectedTab = 0;
+
   public progressValue = 25;
   public rating = 0;
   public isLoading = false;

@@ -1,0 +1,20 @@
+@import 'src/styles';
+
+.tabs {
+  display: flex;
+  margin-bottom: 2px;
+
+  .tab {
+    padding: 2px;
+    cursor: pointer;
+    margin-right: 10px;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+
+    &.is-active {
+      transition: all 0.5s;
+      border-bottom: 2px solid $blue;
+
+    }
+  }
+}

@@ -1,11 +1,24 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Tab'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <app-tab [tabs]="tabs" (selectedTabIndex)="selectedTab = $event">
+      <app-paging *ngIf="selectedTab === 0"></app-paging>
+      <app-counter-input *ngIf="selectedTab === 1"> </app-counter-input>
+    </app-tab>
+  </div>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Paging'"
   [subTitle]="'Components'"
 >
-<div body>
-  <app-paging [totalItems]="200"></app-paging>
-</div>
+  <div body>
+    <app-paging [totalItems]="200"></app-paging>
+  </div>
 </app-card>
 
 <app-card
@@ -13,9 +26,9 @@
   [title]="'Simple Table'"
   [subTitle]="'Components'"
 >
-<div body>
-  <app-simple-table></app-simple-table>
-</div>
+  <div body>
+    <app-simple-table></app-simple-table>
+  </div>
 </app-card>
 
 <app-card
@@ -23,9 +36,9 @@
   [title]="'Counter Input'"
   [subTitle]="'Components'"
 >
-<div body>
-  <app-counter-input></app-counter-input>
-</div>
+  <div body>
+    <app-counter-input></app-counter-input>
+  </div>
 </app-card>
 
 <app-card
