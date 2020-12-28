@@ -18,6 +18,7 @@ import { ToggleComponent } from './toggle/toggle.component';
 import { DebounceSearchComponent } from './debounce-search/debounce-search.component';
 import { SearchListComponent } from './search-list/search-list.component';
 import { PipesModule } from '../pipes/pipes.module';
+import { CounterInputComponent } from './counter-input/counter-input.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { PipesModule } from '../pipes/pipes.module';
     ToggleComponent,
     DebounceSearchComponent,
     SearchListComponent,
+    CounterInputComponent,
   ],
   imports: [
     CommonModule,
