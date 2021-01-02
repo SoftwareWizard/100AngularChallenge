@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
 import { AccordionItem } from '../accordion/AccordionItem';
 import { LoaderType } from '../loader2/loader-type.enum';
+import { fadeInOutAnimation } from '../../shared/animations/fade-in-out.animation';
 
 @Component({
   selector: 'app-components-documentation',
   templateUrl: './components-documentation.component.html',
   styleUrls: ['./components-documentation.component.scss'],
+  animations: [fadeInOutAnimation]
 })
 export class ComponentsDocumentationComponent {
   title = 'angular-challenges';
+  IsInDom = false;
 
   public accordionItems: AccordionItem[] = [
     { title: 'Example 1', content: 'Example content 1', isExpanded: false },
