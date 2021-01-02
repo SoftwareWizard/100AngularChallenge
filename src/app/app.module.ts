@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app.routing.module';
 import { AppComponent } from './components/app/app.component';
 import { SharedModule } from './modules/shared/shared.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { DirectivesModule } from './modules/directives/directives.module';
 import { ComponentsModule } from './modules/components/components.module';
@@ -14,6 +15,7 @@ import { BrowserModule } from '@angular/platform-browser';
   declarations: [AppComponent, HomeComponent, ToolbarComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     DirectivesModule,
     ComponentsModule,
