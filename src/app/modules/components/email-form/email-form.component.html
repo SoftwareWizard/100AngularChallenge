@@ -1,1 +1,58 @@
-<p>email-form works!</p>
+<div class="email-form-container">
+  <div class="email-container">
+    <div class="form-container">
+      <h2>Get In Touch</h2>
+
+      <form
+        class="email-form"
+        [formGroup]="formGroup"
+        (ngSubmit)="submitMessage()"
+      >
+        <div>
+          <div
+            class="name"
+            [class.error]="
+              formGroup.controls.name.errors && formGroup.controls.name.touched
+            "
+          >
+            <input type="text" placeholder="Your Name" formControlName="name" />
+            <i class="fas fa-user"></i>
+          </div>
+          <small
+            class="error"
+            *ngIf="
+              formGroup.controls.name.errors && formGroup.controls.name.touched
+            "
+          >
+            Name is too short!
+          </small>
+
+          <div class="email">
+            <input
+              type="email"
+              placeholder="Your Email"
+              formControlName="email"
+            />
+            <i class="fas fa-envelope"></i>
+          </div>
+          <small
+            class="error"
+            *ngIf="
+              formGroup.controls.email.errors &&
+              formGroup.controls.email.touched
+            "
+          >
+            Email is invalid!
+          </small>
+        </div>
+
+        <div class="message">
+          <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
+          <i class="fas fa-comment"></i>
+        </div>
+
+        <button [disabled]="formGroup.invalid">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

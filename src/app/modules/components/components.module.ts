@@ -12,7 +12,7 @@ import { ModalComponent } from './modal/modal.component';
 import { ProgressbarComponent } from './progressbar/progressbar.component';
 import { StarratingsComponent } from './starratings/starratings.component';
 import { TopOfPageComponent } from './top-of-page/top-of-page.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { QuoteComponent } from './quote/quote.component';
 import { ToggleComponent } from './toggle/toggle.component';
 import { DebounceSearchComponent } from './debounce-search/debounce-search.component';
@@ -49,8 +49,9 @@ import { EmailFormComponent } from './email-form/email-form.component';
   ],
   imports: [
     CommonModule,
-    FormsModule,
     ComponentsRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     SharedModule,
     PipesModule,
   ],
