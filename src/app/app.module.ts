@@ -11,6 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ServicesModule } from './modules/services/services.module';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { OtherModule } from './modules/other/other.module';
 @NgModule({
   declarations: [AppComponent, HomeComponent, ToolbarComponent],
   imports: [
@@ -21,6 +22,7 @@ import { BrowserModule } from '@angular/platform-browser';
     ComponentsModule,
     ServicesModule,
     SharedModule,
+    OtherModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

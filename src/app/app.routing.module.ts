@@ -24,6 +24,13 @@ const routes: Routes = [
       ),
   },
   { path: 'services', component: ServicesDocumentationComponent },
+  {
+    path: 'other',
+    loadChildren: () =>
+      import('./modules/other/other.module').then(
+        (m) => m.OtherModule
+      ),
+  },
   { path: '**', component: HomeComponent },
 ];
 
