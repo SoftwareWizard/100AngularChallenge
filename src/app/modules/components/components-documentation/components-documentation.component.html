@@ -1,11 +1,19 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
-  [title]="'Banner Cut out'"
+  [title]="'Snackbar'"
   [subTitle]="'Components'"
 >
   <div body>
-    <app-banner-cut-out [title]="'Los gehts'"></app-banner-cut-out>
+    <app-snackbar [message]="'Snackbar Example'"></app-snackbar>
+    <button (click)="snackbarShow()">Show Snackbar</button>
   </div>
+</app-card>
+<app-card
+  [iconClass]="'fas fa-info-circle'"
+  [title]="'Banner Cut out'"
+  [subTitle]="'Components'"
+>
+  <app-banner-cut-out body [title]="'Los gehts'"></app-banner-cut-out>
 </app-card>
 
 <app-card

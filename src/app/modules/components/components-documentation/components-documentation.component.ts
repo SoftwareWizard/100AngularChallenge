@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { AccordionItem } from '../accordion/AccordionItem';
 import { LoaderType } from '../loader2/loader-type.enum';
 import { fadeInOutAnimation } from '../../shared/animations/fade-in-out.animation';
 import { RibbonLocationType } from '../ribbon/location.type';
 import { RibbonType } from '../ribbon/ribbon.type';
 import { ButtonMeta } from '../button-toggle/button-meta';
+import { SnackbarComponent } from '../snackbar/snackbar.component';
 
 @Component({
   selector: 'app-components-documentation',
@@ -48,6 +49,12 @@ export class ComponentsDocumentationComponent {
     new ButtonMeta({ id: 2, title: 'Italic' }),
     new ButtonMeta({ id: 3, title: 'Underline' }),
   ];
+
+  @ViewChild(SnackbarComponent, null) public snackBar: SnackbarComponent;
+
+  public snackbarShow(): void {
+    this.snackBar.show();
+  }
 
   onSearchUpdate($event): void {
     console.log($event);
