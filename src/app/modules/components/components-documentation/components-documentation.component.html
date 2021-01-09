@@ -1,5 +1,69 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Banner Cut out'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <app-banner-cut-out [title]="'Los gehts'"></app-banner-cut-out>
+  </div>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
+  [title]="'Button Toggle'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <app-button-toggle
+      [options]="buttonToggleOptions"
+      (selection)="onToggleButtonSelection($event)"
+    ></app-button-toggle>
+  </div>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
+  [title]="'Ribbon'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <app-ribbon
+      [content]="'Beta Course'"
+      [location]="ribbonStyle.location"
+      [type]="ribbonStyle.type"
+    >
+    </app-ribbon>
+    <div class="button-container">
+      <div class="location">
+        <button (click)="ribbonStyle.location = RibbonLocation.Hide">
+          Hide
+        </button>
+        <button (click)="ribbonStyle.location = RibbonLocation.TopRight">
+          Top-Right
+        </button>
+        <button (click)="ribbonStyle.location = RibbonLocation.TopLeft">
+          Top-Left
+        </button>
+        <button (click)="ribbonStyle.location = RibbonLocation.BottomRight">
+          Bottom-Right
+        </button>
+        <button (click)="ribbonStyle.location = RibbonLocation.BottomLeft">
+          Bottom-Left
+        </button>
+      </div>
+
+      <div class="type">
+        <button (click)="ribbonStyle.type = RibbonType.Info">Info</button>
+        <button (click)="ribbonStyle.type = RibbonType.Error">Error</button>
+        <button (click)="ribbonStyle.type = RibbonType.Success">Success</button>
+        <button (click)="ribbonStyle.type = RibbonType.Warning">Warning</button>
+      </div>
+    </div>
+  </div>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Email Form'"
   [subTitle]="'Components'"
 >
@@ -14,8 +78,7 @@
   [subTitle]="'Components'"
 >
   <div body>
-    <app-sort-table>
-    </app-sort-table>
+    <app-sort-table> </app-sort-table>
   </div>
 </app-card>
 

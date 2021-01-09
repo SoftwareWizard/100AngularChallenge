@@ -1,0 +1,10 @@
+app-card {
+  .button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    button {
+      margin-right: 2px;
+    }
+  }
+}

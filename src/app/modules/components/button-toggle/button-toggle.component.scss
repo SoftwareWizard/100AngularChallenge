@@ -1,0 +1,43 @@
+@import 'src/styles';
+
+.button-toggle-container {
+  display: flex;
+
+  button {
+    background-color: white;
+    border: 1px solid $blue;
+    padding: 2px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:first-child {
+      border-right: none;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+
+    &:last-child {
+      border-left: none;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+
+    &:only-child {
+      border: 1px solid $blue;
+    }
+
+    &:hover {
+      color: white;
+      background-color: #0006b3;
+    }
+
+    &.active {
+      color: white;
+      background-color: $blue;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

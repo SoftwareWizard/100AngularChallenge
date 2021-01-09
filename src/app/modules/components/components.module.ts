@@ -24,6 +24,9 @@ import { PagingComponent } from './paging/paging.component';
 import { TabComponent } from './tab/tab.component';
 import { SortTableComponent } from './sort-table/sort-table.component';
 import { EmailFormComponent } from './email-form/email-form.component';
+import { RibbonComponent } from './ribbon/ribbon.component';
+import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
+import { BannerCutOutComponent } from './banner-cut-out/banner-cut-out.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +49,9 @@ import { EmailFormComponent } from './email-form/email-form.component';
     TabComponent,
     SortTableComponent,
     EmailFormComponent,
+    RibbonComponent,
+    ButtonToggleComponent,
+    BannerCutOutComponent,
   ],
   imports: [
     CommonModule,
