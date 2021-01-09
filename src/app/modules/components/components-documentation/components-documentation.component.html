@@ -1,5 +1,17 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Simple Popup'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <app-simple-popup [message]="'Simple Popup Component'">
+      <h3>Hello World</h3>
+    </app-simple-popup>
+  </div>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Snackbar'"
   [subTitle]="'Components'"
 >
