@@ -3,7 +3,9 @@
   [title]="'Copy'"
   [subTitle]="'Directives'"
 >
-  <button body [appCopy]="'Directive Copy Example Text'" class="app-copy">Copy</button>
+  <button body [appCopy]="'Directive Copy Example Text'" class="app-copy">
+    Copy
+  </button>
 </app-card>
 
 <app-card
@@ -38,5 +40,15 @@
 >
   <div body>
     <button appDebounceClick (debounceClick)="log()">Debounce</button>
+  </div>
+</app-card>
+<app-card
+  [iconClass]="'fas fa-info-circle'"
+  [title]="'Lazy Load Image'"
+  [subTitle]="'Directives'"
+>
+  <div body>
+    <img appLazyLoadImage width="500px"
+    src="https://images.unsplash.com/photo-1610019959724-62123f43b430?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8RnpvM3p1T0hONnd8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" >
   </div>
 </app-card>
