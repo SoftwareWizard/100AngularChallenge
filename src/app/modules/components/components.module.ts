@@ -31,6 +31,7 @@ import { SnackbarComponent } from './snackbar/snackbar.component';
 import { SimplePopupComponent } from './simple-popup/simple-popup.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 import { FooterComponent } from './footer/footer.component';
+import { SkeletonComponent } from './skeleton/skeleton.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { FooterComponent } from './footer/footer.component';
     SimplePopupComponent,
     CountdownTimerComponent,
     FooterComponent,
+    SkeletonComponent,
   ],
   imports: [
     CommonModule,

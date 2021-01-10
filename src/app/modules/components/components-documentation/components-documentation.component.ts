@@ -36,6 +36,7 @@ export class ComponentsDocumentationComponent {
   public isModalHidden = true;
   public toggleValue = false;
   public LoaderType = LoaderType;
+  public loaded = true;
 
   public ribbonStyle = {
     location: RibbonLocationType.Hide,

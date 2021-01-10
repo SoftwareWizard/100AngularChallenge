@@ -1,5 +1,22 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Skeleton Loader'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <app-skeleton *ngIf="!loaded" [height]="'30px'" [width]="'500px'"></app-skeleton>
+    <p *ngIf="loaded">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum
+      voluptatem optio placeat consectetur. Incidunt unde a corrupti laudantium
+      aperiam minus, doloremque voluptatibus! Eius sit ipsum voluptatibus vel
+      accusantium natus!
+    </p>
+  </div>
+  <button footer (click)="loaded = !loaded">Toggle</button>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Countdown Timer'"
   [subTitle]="'Components'"
 >
@@ -305,4 +322,3 @@
 >
   <app-footer body></app-footer>
 </app-card>
-
