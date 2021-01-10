@@ -1,10 +1,27 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Social Media'"
+  [subTitle]="'Components'"
+>
+  <app-social-media
+    body
+    [socialMedia]="socialMedia"
+    *ngIf="showSocialMedia"
+  ></app-social-media>
+  <button footer (click)="showSocialMedia = !showSocialMedia">Show</button>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Skeleton Loader'"
   [subTitle]="'Components'"
 >
   <div body>
-    <app-skeleton *ngIf="!loaded" [height]="'30px'" [width]="'500px'"></app-skeleton>
+    <app-skeleton
+      *ngIf="!loaded"
+      [height]="'30px'"
+      [width]="'500px'"
+    ></app-skeleton>
     <p *ngIf="loaded">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum
       voluptatem optio placeat consectetur. Incidunt unde a corrupti laudantium
@@ -21,7 +38,7 @@
   [subTitle]="'Components'"
 >
   <div body>
-    <app-countdown-timer [time]="'Jan 10, 2021 10:36:00'"></app-countdown-timer>
+    <app-countdown-timer [time]="'Jan 10, 2022 10:36:00'"></app-countdown-timer>
   </div>
 </app-card>
 
