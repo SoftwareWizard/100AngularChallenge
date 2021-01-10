@@ -1,5 +1,18 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Tab'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <app-tab [tabs]="tabs" (selectedTabIndex)="selectedTab = $event">
+      <h1 @slideRightAnimation *ngIf="selectedTab === 0">Hello</h1>
+      <h1 @slideLeftAnimation *ngIf="selectedTab === 1">World</h1>
+    </app-tab>
+  </div>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Form Dirty Guard'"
   [subTitle]="'Other'"
 >

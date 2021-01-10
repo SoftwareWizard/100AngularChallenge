@@ -69,6 +69,6 @@ import { FooterComponent } from './footer/footer.component';
     SharedModule,
     PipesModule,
   ],
-  exports: [TopOfPageComponent],
+  exports: [TopOfPageComponent, TabComponent],
 })
 export class ComponentsModule {}
