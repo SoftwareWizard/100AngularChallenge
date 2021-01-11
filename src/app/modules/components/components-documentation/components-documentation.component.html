@@ -1,5 +1,15 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Fieldset'"
+  [subTitle]="'Components'"
+>
+  <app-fieldset body [legend]="'Address'">
+    <app-email-form></app-email-form>
+  </app-fieldset>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Bottom Sheet'"
   [subTitle]="'Components'"
 >
@@ -11,7 +21,6 @@
   <div class="footer" footer>
     <button (click)="bottomSheet.show()">Show</button>
   </div>
-
 </app-card>
 
 <app-card
