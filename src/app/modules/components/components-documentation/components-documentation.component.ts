@@ -8,6 +8,7 @@ import { ButtonMeta } from '../button-toggle/button-meta';
 import { SnackbarComponent } from '../snackbar/snackbar.component';
 import { SocialMediaIcon } from '../social-media/social-media-icon.interface';
 import { SocialMedia } from '../social-media/social-media.enum';
+import { PillType } from '../pill/pill-type.enum';
 
 @Component({
   selector: 'app-components-documentation',
@@ -61,6 +62,8 @@ export class ComponentsDocumentationComponent {
     { href: '', type: SocialMedia.Twitter },
     { href: '', type: SocialMedia.YouTube },
   ];
+
+  public PillType = PillType;
 
   @ViewChild(SnackbarComponent, null) public snackBar: SnackbarComponent;
 

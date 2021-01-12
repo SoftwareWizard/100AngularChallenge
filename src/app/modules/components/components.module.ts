@@ -35,6 +35,8 @@ import { SkeletonComponent } from './skeleton/skeleton.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 import { FieldsetComponent } from './fieldset/fieldset.component';
+import { PillComponent } from './pill/pill.component';
+import { PillFilterComponent } from './pill-filter/pill-filter.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +70,8 @@ import { FieldsetComponent } from './fieldset/fieldset.component';
     SocialMediaComponent,
     BottomSheetComponent,
     FieldsetComponent,
+    PillComponent,
+    PillFilterComponent,
   ],
   imports: [
     CommonModule,
