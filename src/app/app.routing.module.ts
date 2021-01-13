@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ServicesDocumentationComponent } from './modules/services/components/services-documentation/services-documentation.component';
 import { HomeComponent } from './components/home/home.component';
+import { NotFoundComponent } from './modules/components/not-found/not-found.component';
 
 const routes: Routes = [
+  // { path: '', component: HomeComponent },
   {
     path: 'components',
     loadChildren: () =>
@@ -27,11 +29,9 @@ const routes: Routes = [
   {
     path: 'other',
     loadChildren: () =>
-      import('./modules/other/other.module').then(
-        (m) => m.OtherModule
-      ),
+      import('./modules/other/other.module').then((m) => m.OtherModule),
   },
-  { path: '**', component: HomeComponent },
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

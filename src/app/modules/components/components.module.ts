@@ -37,6 +37,7 @@ import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 import { FieldsetComponent } from './fieldset/fieldset.component';
 import { PillComponent } from './pill/pill.component';
 import { PillFilterComponent } from './pill-filter/pill-filter.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +73,7 @@ import { PillFilterComponent } from './pill-filter/pill-filter.component';
     FieldsetComponent,
     PillComponent,
     PillFilterComponent,
+    NotFoundComponent,
   ],
   imports: [
     CommonModule,
@@ -81,6 +83,6 @@ import { PillFilterComponent } from './pill-filter/pill-filter.component';
     SharedModule,
     PipesModule,
   ],
-  exports: [TopOfPageComponent, TabComponent],
+  exports: [TopOfPageComponent, TabComponent, NotFoundComponent],
 })
 export class ComponentsModule {}
