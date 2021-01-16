@@ -39,6 +39,7 @@ import { PillComponent } from './pill/pill.component';
 import { PillFilterComponent } from './pill-filter/pill-filter.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PasswordComponent } from './password/password.component';
+import { OverlayComponent } from './overlay/overlay.component';
 
 @NgModule({
   declarations: [
@@ -76,6 +77,7 @@ import { PasswordComponent } from './password/password.component';
     PillFilterComponent,
     NotFoundComponent,
     PasswordComponent,
+    OverlayComponent,
   ],
   imports: [
     CommonModule,

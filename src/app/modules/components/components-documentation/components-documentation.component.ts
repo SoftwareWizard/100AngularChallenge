@@ -41,6 +41,7 @@ export class ComponentsDocumentationComponent {
   public LoaderType = LoaderType;
   public loaded = true;
   public showSocialMedia = false;
+  public isShownOverlay = false;
 
   public ribbonStyle = {
     location: RibbonLocationType.Hide,
