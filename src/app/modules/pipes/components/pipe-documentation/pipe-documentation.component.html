@@ -1,9 +1,33 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
-  [title]="'Sort by'"
+  [title]="'Sort By Key'"
   [subTitle]="'Pipes'"
 >
-  <div body>{{ stringArray | sortBy : false}}</div>
+  <div body>
+    <h5>Object Ascending</h5>
+    <p *ngFor="let obj of objectArray | sortByKey : 'content'">
+      {{ obj.content }}
+    </p>
+    <hr />
+    <h5>Object Descending</h5>
+    <p *ngFor="let obj of objectArray | sortByKey: 'content' : false">
+      {{ obj.content }}
+    </p>
+  </div>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
+  [title]="'Sort By'"
+  [subTitle]="'Pipes'"
+>
+  <div body>
+    <h5>String Ascending</h5>
+    <p>{{ stringArray | sortBy: true }}</p>
+    <hr />
+    <h5>String Descending</h5>
+    <p>{{ stringArray | sortBy: false }}</p>
+  </div>
 </app-card>
 
 <app-card
@@ -11,7 +35,9 @@
   [title]="'Filter Term'"
   [subTitle]="'Pipes'"
 >
-  <div body>{{ ['Hello', 'World', 'Hello World'] | appFilterTerm : 'Hello' }}</div>
+  <div body>
+    {{ ['Hello', 'World', 'Hello World'] | appFilterTerm: 'Hello' }}
+  </div>
 </app-card>
 
 <app-card

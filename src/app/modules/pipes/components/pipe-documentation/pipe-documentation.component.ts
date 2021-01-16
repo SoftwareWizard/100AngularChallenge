@@ -10,6 +10,15 @@ export class PipeDocumentationComponent {
 
   public stringArray: string[] = ['Courses', 'YouTube', 'Twitter', 'LinkedIn'];
 
+  public objectArray: {
+    [key: string]: string;
+  }[] = [
+    { content: 'Courses' },
+    { content: 'YouTube' },
+    { content: 'Twitter' },
+    { content: 'LinkedIn' },
+  ];
+
   modifyFlatten(): void {
     this.flattenData.push(3, 5);
   }
