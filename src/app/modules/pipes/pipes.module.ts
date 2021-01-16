@@ -8,6 +8,7 @@ import { TruncatePipe } from './truncate/truncate.pipe';
 import { CreditCardFormatterPipe } from './credit-card-formatter/credit-card-formatter.pipe';
 import { FlattenPipe } from './flatten/flatten.pipe';
 import { FilterTermPipe } from './filter-term/filter-term.pipe';
+import { SortByPipe } from './sort-by/sort-by.pipe';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FilterTermPipe } from './filter-term/filter-term.pipe';
     CreditCardFormatterPipe,
     FlattenPipe,
     FilterTermPipe,
+    SortByPipe,
   ],
   imports: [CommonModule, PipesRoutingModule, SharedModule],
   exports: [FilterTermPipe],

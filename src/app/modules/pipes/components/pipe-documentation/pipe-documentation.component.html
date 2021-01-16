@@ -1,5 +1,13 @@
 <app-card
   [iconClass]="'fas fa-info-circle'"
+  [title]="'Sort by'"
+  [subTitle]="'Pipes'"
+>
+  <div body>{{ stringArray | sortBy : false}}</div>
+</app-card>
+
+<app-card
+  [iconClass]="'fas fa-info-circle'"
   [title]="'Filter Term'"
   [subTitle]="'Pipes'"
 >
