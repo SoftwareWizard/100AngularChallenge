@@ -1,1 +1,12 @@
-<p>services-documentation works!</p>
+<app-card
+  [iconClass]="'fas fa-info-circle'"
+  [title]="'Local Storage'"
+  [subTitle]="'Services'"
+>
+  <div body>
+    {{ state | json }}
+  </div>
+  <div footer>
+    <button (click)="updateState()">Update State</button>
+  </div>
+</app-card>
